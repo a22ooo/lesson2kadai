@@ -17,14 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMz-ZU-PpL">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMz-ZU-PpL">
                                 <rect key="frame" x="84" y="258" width="253" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="はじめてのアプリ">
                                         <attributes>
                                             <color key="NSColor" systemColor="systemPinkColor"/>
-                                            <font key="NSFont" size="30" name=".HiraKakuInterface-W3"/>
+                                            <font key="NSFont" metaFont="system" size="30"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -32,9 +31,24 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="4" height="-1"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="初めてのアプリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jy-0Q-7hY">
+                                <rect key="frame" x="101" y="167" width="213" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lMz-ZU-PpL" secondAttribute="trailing" constant="77" id="Atm-uF-cPc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lMz-ZU-PpL" secondAttribute="bottom" constant="553" id="Kfy-a8-YBI"/>
+                            <constraint firstItem="2Jy-0Q-7hY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RKm-st-vom"/>
+                            <constraint firstItem="lMz-ZU-PpL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="214" id="Skt-5B-RF4"/>
+                            <constraint firstItem="2Jy-0Q-7hY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="101" id="lgT-7v-dMd"/>
+                            <constraint firstItem="2Jy-0Q-7hY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="123" id="pAc-un-wqq"/>
+                            <constraint firstItem="lMz-ZU-PpL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="wfR-iX-MtC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
